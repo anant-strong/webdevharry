@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,width,border,background</title>
+    <style>
+        #firstPara{
+            height:100px;
+            width:100px;
+            background-color: rgb(0, 0, 0);
+            color:red;
+            border:5px solid blue;
+            /* border-width: 5px;
+            border-color: blue;
+            border-style: solid;  */
+            border-radius: 4px;
+        }
+        #secondPara{
+            height:100px;
+            width:100px;
+            background-color: rgb(0, 0, 0);
+            color:red;
+            border-top: 5px solid rgb(231, 22, 231);
+            border-right: 5px solid rgb(18, 10, 133);
+            border-bottom: 5px solid rgba(9, 144, 27, 0.774);
+            border-left: 5px solid rgb(156, 42, 13);
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 4px;
+            border-top-right-radius: 8px;
+
+        }
+        #thirdPara{
+            height:100px;
+            width:100px;
+            border: 5px solid blue;
+            background-image: url('data:image/png;base64,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');
+            background-repeat: no-repeat;/* repeat-x and repeat-y will make it repeat on x and y axis */
+            /* background-position: 192px 34px; */
+            background-position: center center;
+            /* background-position: bottom right; */
+            /* background-position: top center; */
+
+            color:red;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <h3>This is first heading</h3>
+    <p id="firstPara">
+        This is first paragraph
+    </p>
+    <h3>This is second heading</h3>
+    <p id="secondPara">
+        This is second paragraph
+    </p>
+    <h3>This is third heading</h3>
+    <p id="thirdPara">
+        This is third paragraph
+    </p>
+</body>
+</html>

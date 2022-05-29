@@ -1,0 +1,187 @@
+<!--Tutorial 1 to 8-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- character encoding -->
+    <meta charset="UTF-8">
+    <!-- this for internet explorer user -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- for making website responsive on mobile,tablet,pc -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is description, which will be shown below the link of site when searched on google.">
+    <!-- for SEO, when these keywords are searched our website will be shown -->
+    <meta name="keywords" content="html,html tutorials, web development">
+    <!-- <meta name="robots" content="NOINDEX, NOFOLLOW"> if we don't want our website to be searched on internet -->
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>Anant</title>
+    <!-- linking external css file -->
+    <link rel="stylesheet" href="anant.css">
+    <!-- linking external js file -->
+
+
+    <script src="anant.js"></script>
+</head>
+
+<body>
+    <!-- Our body starts here -->
+    <h1>Hi there,</h1>
+    <h2>Hi there,</h2>
+    <h3>Hi there,</h3>
+    <h4>Hi there,</h4>
+    <h5>Hi there,</h5>
+    <h6>Hi there,</h6>
+
+    <p>This is a paragraph.</p>
+    <p>Lorem, ipsum dolor sit amet <em>This is emphasized</em> consectetur adipisicing elit. Mollitia rem dolorem
+        distinctio et <strong>This is strong</strong>rerum assumenda <b>This is bold</b>laboriosam cupiditate non
+        voluptatibus animi <i>This is italics</i>iure ad saepe suscipit neque unde nulla perspiciatis <br>magnam
+        nesciunt inventore iste, sint nemo voluptas. Ad voluptas rerum quidem aliquam.</p>
+    <hr>
+    <!-- for linking links for various sites -->
+    <a href="https://google.com" target="_blank">Go to google<br></a>
+    <a href="https://facebook.com" target="_blank">Go to facebook<br></a>
+    <a href="https://twitter.com" target="_blank">Go to twitter<br></a>
+    <!-- for linking multiple pages -->
+    <a href="/anant1.html" target="_blank">anant1</a><br>
+    <!-- image adding -->
+    <img src="anant.jpg" alt="error loading image"><br>
+    <img src="https://miro.medium.com/max/1272/1*ZSVmWGcc1weENb0ShawWxw.gif"
+        alt="online image loading">
+
+    <!-- lists -->
+    <ul type="circle">
+        <li>
+            This is first unordered item.
+        </li>
+        <li>
+            This is second unordered item.
+        </li>
+        <li>
+            This is second unordered item.
+        </li>
+    </ul>
+    <ol type="i">
+        <li>
+            This is first ordered item.
+        </li>
+        <li>
+            This is second ordered item.
+        </li>
+        <li>
+            This is second ordered item.
+        </li>
+    </ol>
+
+    <!-- tables -->
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Role
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Rahul
+                </td>
+                <td>
+                    89239
+                </td>
+                <td>
+                    Programmer
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Subham
+                </td>
+                <td>
+                    293090
+                </td>
+                <td>
+                    MBA
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Vipul
+                </td>
+                <td>
+                    92002
+                </td>
+                <td>
+                    CA
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+        <label for="name"> Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility" checked>
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+        </div>
+
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="50" rows="10"></textarea>
+        </div>
+
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf" selected>Swift</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+
+
+
+</body>
+
+</html>

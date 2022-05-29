@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        * {
+            /* properties defined here will affect in whole page */
+            box-sizing: border-box;  
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #e6cbf8;
+        }
+
+        .container{
+            background-color: rgb(231, 230, 241);
+            border: 3px solid rgb(64, 6, 119);
+
+            /* this will create margin/padding in all direction in same magnitude
+            padding: 38px;
+            margin: 48px; */
+
+            /* We can set margin/padding for  top, bottom, left and right like this */
+            /* padding-top: 79px;
+            padding-bottom: 79px;
+            padding-left: 34px; 
+            padding-right: 79px;*/
+
+            
+
+            /* margin = top right bottom left;  */
+            /* padding = top right bottom left;  */
+
+            /* padding: 23px 56px 6px 78px;   */
+            /* margin: 23px 56px 6px 78px;   */
+        
+            /* padding: y(top/bottom) x(left/right); */
+            /* margin: y(top/bottom) x(left/right); */
+            padding: 34px 19px;
+            margin: 14px 0px;
+            margin-left: 544px;
+            border-radius: 23px;
+            width: 533px;
+            /* if i fix width to 533px and increase the margin in left or right the overall width of the box will increase that's where box-sizing: border-box;comes into play,it will make width constant and if we try to increase margin */
+        }
+        
+        .dot {
+        height: 25px;
+        width: 25px;
+        background-color: rgb(120, 105, 255);
+        border-radius: 50%;
+        display: inline-block;
+}
+        #special{
+        height: 25px;
+        width: 25px;
+        background-color: rgb(120, 105, 255);
+        border-radius: 50%;
+        display: inline-block;
+        margin-left:743px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>This is heading</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, aperiam ad! Dolorum minima eum natus voluptatibus. Quas quia voluptatibus quaerat omnis pariatur aut.
+        </p>
+    </div>
+    <span id="special"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <div class="container">
+        <h2>This is heading</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, aperiam ad! Dolorum minima eum natus voluptatibus. Quas quia voluptatibus quaerat omnis pariatur aut.
+        </p>
+    </div>
+    <span id="special"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <div class="container">
+        <h2>This is heading</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, aperiam ad! Dolorum minima eum natus voluptatibus. Quas quia voluptatibus quaerat omnis pariatur aut.
+        </p>
+    </div>
+</body>
+</html>
