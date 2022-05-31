@@ -6,12 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Display Properties</title>
     <style>
+        header{
+            border:solid 4px black;
+            width: 1200px; 
+            /* we can set width in block elements only,and then we can use margin auto  */
+            margin: auto;
+        }
+        img {
+            width:100px;
+            display:block; 
+            /* to convert img which is inline to block and then we set margin also we can convert to inline */
+            margin:auto;
+            border:solid 2px red;
+        }
+        h3{
+            border:solid 4px violet;
+            text-align: center;
+            margin:0px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+        }
+        .box{
+            border:4px solid green;
+            background-color: aqua;
+            margin: 0px;
+            padding:23px;
+            display: inline-block;
+            /* to make them inline element but also we can set their width, which is a property of block  */
+            width: 397px;
+            
+            box-sizing: border-box;
+            /* above one insures that margin,padding don't change the width you provided */
+        }
+        .container{
+            margin:auto;
+            width:1200px;
+        }
     </style>
 </head>
 <body>
     <header class="top">
+        <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="">
         <h3>Welcome to anant's blog.</h3>
     </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellendus recusandae accusantium error sapiente aliquam ipsam sint laborum alias sit. Delectus, iusto consequuntur obcaecati, provident aspernatur, nihil pariatur et quam sapiente quisquam modi impedit necessitatibus! Neque quidem delectus nemo amet dolores accusamus omnis nulla?
+            </p>
+        </div>
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellendus recusandae accusantium error sapiente aliquam ipsam sint laborum alias sit. Delectus, iusto consequuntur obcaecati, provident aspernatur, nihil pariatur et quam sapiente quisquam modi impedit necessitatibus! Neque quidem delectus nemo amet dolores accusamus omnis nulla?
+            </p>
+        </div>
+        <div class="box">
+            <h4 class="heading">heading</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellendus recusandae accusantium error sapiente aliquam ipsam sint laborum alias sit. Delectus, iusto consequuntur obcaecati, provident aspernatur, nihil pariatur et quam sapiente quisquam modi impedit necessitatibus! Neque quidem delectus nemo amet dolores accusamus omnis nulla?
+            </p>
+        </div>
+    </div>
+
 </body>
 </html>
