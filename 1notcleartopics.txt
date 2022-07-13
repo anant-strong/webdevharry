@@ -1,0 +1,6 @@
+css:
+---------------------------------------
+video-21 float and clear 
+video-24 display properties
+video-25 position absolute,relative,fixed
+
